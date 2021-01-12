@@ -40,6 +40,21 @@
                     width: 100%;
                 }
             }
+            .animation {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            @keyframes example {
+                0% {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
             .footer {
                 background-color: #f1f1f1;
                 text-align: center;
@@ -58,6 +73,15 @@
             <a href = "index.html">Home and References</a>
             <a href = "methods.html">Methods of Accessing CSS</a>
             <a href = "boxmodel.html">CSS Box Model</a>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <h2>What are CSS Animations?</h2>
+                <p>A CSS animation allows a HTML element change from one style to the other. To use the CSS animation, you must create and specify keyframes for it to work. Keyframes hold the styles that the HTML element will use.</p>
+                <p>Below is an example of an animation:</p>
+                <div class = "animation"></div>
+            </div>
         </div>
     </body>
 </html>
